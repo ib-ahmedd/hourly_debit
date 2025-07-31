@@ -58,8 +58,7 @@ const UserDashboard = ({ accessToken, user, setIsLoggedIn }) => {
         {},
         {
           headers: {
-            apikey:
-              "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZiamhrc2xieW5mbHN2dmRpb2h6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzgyMjkxOSwiZXhwIjoyMDY5Mzk4OTE5fQ.QE9o33tvAmXHG0PvfbxQ7T2W6nSiAzSTJDSdUFxzXPY",
+            apikey: "",
             Authorization: `Bearer ${accessToken}`,
           },
         }

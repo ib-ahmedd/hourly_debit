@@ -3,8 +3,10 @@ import "./index.css";
 import Auth from "./components/auth";
 import UserDashboard from "./components/userDashboard";
 import Cookies from "js-cookie";
+// import "dotenv/config";
 
 const App = () => {
+  //   console.log(process.env.API_KEY);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [accessToken, setAccessToken] = useState("");
   const [user, setUser] = useState({ id: "", email: "" });

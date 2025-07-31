@@ -2,6 +2,10 @@
   "name": "keeper",
   "version": "0.1.0",
   "private": true,
+  "browser": {
+    "crypto": false,
+    "stream": false
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "@supabase/functions-js": "^2.4.5",
@@ -10,13 +14,20 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.11.0",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.1",
+    "dotenv": "^17.2.1",
     "js-cookie": "^3.0.5",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.2",
     "react-scripts": "5.0.1",
     "supabase": "^2.33.7",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "start": "react-scripts start",
