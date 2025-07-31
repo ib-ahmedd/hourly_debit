@@ -14,6 +14,8 @@ const UserDashboard = ({ accessToken, user, setIsLoggedIn }) => {
   const [pageLoading, setPageLoading] = useState(true);
   const [loadingDebitLogs, setLoadingDebitLogs] = useState(false);
 
+  const apiKey = process.env.REACT_APP_API_KEY;
+
   const getCustomers = useCallback(async () => {
     try {
       const url =
@@ -58,7 +60,7 @@ const UserDashboard = ({ accessToken, user, setIsLoggedIn }) => {
         {},
         {
           headers: {
-            apikey: "",
+            apikey: apiKey,
             Authorization: `Bearer ${accessToken}`,
           },
         }

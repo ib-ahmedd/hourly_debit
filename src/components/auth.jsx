@@ -9,6 +9,7 @@ const Auth = ({ setIsLoggedIn, setAccessToken, setUser }) => {
   const [inputs, setInputs] = useState({ email: "", password: "" });
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   const handleSubmit = async () => {
     setLoading(true);
@@ -21,7 +22,7 @@ const Auth = ({ setIsLoggedIn, setAccessToken, setUser }) => {
           },
           {
             headers: {
-              apiKey: "",
+              apiKey: apiKey,
             },
           }
         );
