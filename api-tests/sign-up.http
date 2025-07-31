@@ -1,0 +1,8 @@
+POST https://vbjhkslbynflsvvdiohz.supabase.co/auth/v1/signup
+Content-Type: application/json
+apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZiamhrc2xieW5mbHN2dmRpb2h6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzgyMjkxOSwiZXhwIjoyMDY5Mzk4OTE5fQ.QE9o33tvAmXHG0PvfbxQ7T2W6nSiAzSTJDSdUFxzXPY
+
+{
+    "email": "adamsageer022@gmail.com",
+    "password": "123456"
+}
